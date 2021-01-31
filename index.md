@@ -1,8 +1,6 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title> Daniel Rangel</title>
     <meta charset="UTF-8">
     <meta name="description" content="personal web portfolio">
     <meta name="keywords" content="Portfolio, CV, Developer, Engineering, Games, Programming, Web">
