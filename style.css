@@ -1,0 +1,661 @@
+body{
+    background-color: #2f3136;
+    color: #dfdadb;
+    font-family: "Poppins";
+    font-size: 1rem;
+}
+
+/********************************HEADER********************************/
+
+header{
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    z-index: 5;
+    min-width: 200px;
+    letter-spacing: 0.13rem;
+}
+
+header, footer{
+    background-color: #242529;
+    color: #b8bcc9;
+    font-weight: 300;
+}
+
+@media only screen and (min-width:631px){
+
+    header .wrap{
+        margin: 15px auto;
+        width: 80%;
+        max-width: 1500px;
+        min-width: 550px;
+    }
+
+    header ul, header li{
+        display: inline-block;
+    }
+
+    header, footer, h3{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .small-nav{
+        display: none;
+    }
+
+    nav{
+        min-width: 320px;
+        width: auto;
+        display: inline-block;
+    }
+
+    nav li{
+        margin-right: 10px;
+    }
+
+}
+
+.lang{
+    float: right;
+    width: 70px;
+}
+
+@media only screen and (max-width:630px){
+    header .wrap{
+        margin: 15px auto;
+        height: 25px;
+        width: 80%;
+        max-width: 1500px;
+        min-width: 200px;
+    }
+
+    .nav-buttons{
+        display: none;
+    }
+
+    .small-nav{
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+    }
+
+    .small-nav table{
+        margin-top: 3px;
+    }
+
+    .small-nav td{
+        padding-right: 15px;
+    }
+
+    .small-nav img{
+        width: auto;
+        height: auto;
+        max-width: 15px;
+    }
+
+    header ul, header li{
+        display: inline-block;
+    }
+
+    header, footer, h3{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+}
+
+/********************************#WELCOME********************************/
+
+.content{
+    position: relative;
+    top: 50px;
+    min-width: 480px;
+}
+
+.banner{
+    display: block;
+    background-image: url("resources/banner.png");
+    background-position: center top;
+    background-size: cover;
+    height: 400px;
+    width: auto;
+}
+
+
+@media only screen and (min-width:651px){
+
+    #welcome div{
+        width: 40%;
+        margin:auto;
+        position: relative;
+        top:30%;
+        max-width: 600px;
+        min-width: 600px;
+    }
+
+    #welcome h1{
+        display: inline-block;
+        font-size: 3.6rem;
+        color: white;
+        margin-left: 7%;
+        vertical-align: middle;
+    }
+
+    #welcome img{
+        width:100%;
+        height:auto;
+        max-width: 150px;
+        min-width: 50px;
+        max-height: 2500px;
+        min-height: 50px;
+        vertical-align: middle;
+    }
+}
+
+@media only screen and (max-width:650px){
+
+    #welcome div{
+        width: 50%;
+        margin:auto;
+        position: relative;
+        top:20%;
+        max-width: 290px;
+        min-width: 290px;
+    }
+
+    #welcome h1{
+        font-size: 2.6rem;
+        color: white;
+        max-width: 290px;
+        min-width: 290px;
+        margin-top: 10%;
+    }
+
+    #welcome img{
+        width:100%;
+        height:auto;
+        margin-left: 65px;
+        max-width: 150px;
+        min-width: 50px;
+        max-height: 2500px;
+        min-height: 50px;
+        vertical-align: middle;
+    }
+}
+
+/********************************#ABOUT********************************/
+
+.wrap{
+    width: 70%;
+    max-width: 1120px;
+    min-width: 480px;
+    margin: auto;
+}
+
+#about{
+    margin-top: 50px;
+}
+
+#about .divider{
+    border-bottom: 1px solid #f7f7f7;
+    padding-bottom: 10px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+#about h3, #projects h3{
+    text-align: center;
+    color: white;
+    word-spacing: 0.1rem;
+    letter-spacing: 0.15rem;
+}
+
+.bio{
+    width: 60%;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    word-spacing: 0.1rem;
+    letter-spacing: 0.15rem;
+    line-height: 1.4;
+}
+@media only screen and (min-width: 1150px){
+
+    #skills{
+        margin-top: 60px;
+        min-width: 800px;
+    }
+
+    #skills .container{
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+        min-width: 800px;
+    }
+
+    #skills .container tr{
+        height: 50px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #tbl1{
+        vertical-align: middle;
+    }
+
+    #tbl2{
+        vertical-align: middle;
+        float: right;
+    }
+
+    .skills{
+        display: inline-block;
+        vertical-align: center;
+    }
+
+    .skills td{
+        height: 30px;
+        text-align: center;
+        vertical-align: middle;
+        padding-right:10px;
+        padding-left:10px;
+        vertical-align: text-bottom;
+    }
+}
+
+@media only screen and (max-width: 1150px) and (min-width: 1040px){
+
+    #skills{
+        margin-top: 60px;
+    }
+
+    #skills .container{
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    #skills .container tr{
+        height: 50px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #tbl1{
+        vertical-align: middle;
+    }
+
+    #tbl2{
+        vertical-align: middle;
+        float: right;
+    }
+
+    .skills{
+        display: inline-block;
+        vertical-align: center;
+    }
+
+    .skills td{
+        height: 30px;
+        text-align: center;
+        vertical-align: middle;
+        padding-right:10px;
+        padding-left:10px;
+        vertical-align: text-bottom;
+    }
+}
+
+@media only screen and (max-width: 1039px){
+
+    #skills{
+        margin-top: 60px;
+    }
+
+    #skills .container{
+        width: 330px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #skills .container tr{
+        height: 50px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .skills td{
+        height: 30px;
+        text-align: center;
+        vertical-align: middle;
+        padding-right:10px;
+        vertical-align: text-bottom;
+    }
+
+    #tbl1{
+        margin-bottom: 30px;
+    }
+    #tbl2{
+        margin-top: 30px;
+    }
+}
+
+.skills td, h4,
+.bold{
+    font-weight: bold;
+}
+
+.interests{
+    margin-top: 60px;
+    padding-bottom: 15px;
+    word-spacing: 0.1rem;
+    letter-spacing: 0.15rem;
+}
+
+.interests table{
+    margin: 15px auto 0 auto;
+}
+
+.interests table td{
+    padding-right:10px;
+    padding-left:10px;
+}
+
+.interests table td img{
+    height: auto;
+    width: auto;
+    max-width: 50px;
+}
+
+/********************************#PROJECTS********************************/
+
+#projects{
+    margin-top: 70px;
+}
+
+#projects .divider{
+    border-bottom: 1px solid #f7f7f7;
+    padding-bottom: 10px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
+.wide-table{
+    display: relative;
+}
+
+.tall-table{
+    display: none;
+}
+
+#projects .description{
+    text-align: justify;
+}
+
+@media only screen and (min-width: 1254px){
+
+    #projects table{
+        width: 866px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #projects table img{
+        max-width: 360px;
+        width: auto;
+        height: auto;
+    }
+
+    #projects table td{
+        vertical-align: top;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #projects table td .content{
+        position: relative;
+        left: 5%;
+        width: 60%;
+    }
+
+    #projects table td .title{
+        position: relative;
+        bottom: 20px;
+        letter-spacing: 0.1rem;
+    }
+
+    #projects .description{
+        word-spacing: 0.1rem;
+        letter-spacing: 0.15rem;
+        line-height: 1.4;
+    }
+}
+
+@media only screen and (max-width: 1254px) and (min-width: 1040px){
+
+    #projects table{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #projects table img{
+        max-width: 250px;
+        width: auto;
+        height: auto;
+    }
+
+    #projects table td{
+        vertical-align: top;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #projects table td .content{
+        position: relative;
+        left: 5%;
+        min-width: 200px;
+    }
+
+    #projects table .description{
+        font-size: 0.8rem;
+        width: 80%;
+    }
+
+    #projects table td .title{
+        position: relative;
+        bottom: 20px;
+        letter-spacing: 0.1rem;
+    }
+
+    #projects .description{
+        word-spacing: 0.1rem;
+        letter-spacing: 0.10rem;
+        line-height: 1;
+    }
+}
+
+@media only screen and (max-width: 1039px){
+    .wide-table{
+        display: none;
+    }
+
+    .tall-table{
+        display: block;
+        width: 480px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .tall-table tr{
+        text-align: center;
+    }
+    
+    .tall-table td{
+        height: 50px;
+    }
+
+    .tall-table img{
+        max-width: 250px;
+        width: auto;
+        height: auto;
+    }
+
+    #projects table .description{
+        font-size: 0.9rem;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        word-spacing: 0.1rem;
+        letter-spacing: 0.10rem;
+        line-height: 1.2;
+    }
+
+    
+    #projects table td .title{
+        letter-spacing: 0.1rem;
+    }
+
+    #group1 .description{
+        
+        min-height: 120px;
+        padding-top: 20px;
+    }
+
+    #group2 .description{
+
+        min-height: 120px;
+        padding-top: 20px;
+    }
+
+    #group3 .description{
+        
+        min-height: 120px;
+        padding-top: 20px;
+    }
+
+    #group4 .description{
+        min-height: 120px;
+        padding-top: 20px;
+    }
+
+    #group5 .description{
+        min-height: 120px;
+        padding-top: 20px;
+    }
+}
+
+.date{
+    font-size: 0.7rem;
+    font-weight: 300;
+}
+
+/********************************FOOTER********************************/
+
+footer{
+    width: 100%;
+    height: 100px;
+    margin-top: 100px;
+    min-width: 480px;
+}
+
+#footer{
+    position: relative;
+    top: 50px;
+    min-width: 450px;
+}
+
+#contacts #footer{
+    top: 25%;
+    width: 70%;
+    max-width: 1120px;
+    margin: auto;
+}
+#contacts #footer div{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.copyright{
+    margin-top: 17px;
+}
+
+#contacts .contacts{
+    position: relative;
+    float: right;
+}
+
+footer img{
+    width: auto;
+    height: auto;
+    max-height: 35px;
+    margin-right: 10px;
+    padding-top: 5px;
+}
+
+/********************************OTHER********************************/
+
+.underline{
+    text-decoration: underline;
+}
+
+.active{
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a{
+    color:white;
+}
+
+#projects a:hover, footer a:hover{
+    text-decoration: underline;
+}
+
+header a, footer a{
+    color: #b8bcc9;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+
+.tooltip .tooltiptext{
+    visibility: hidden;
+    width: 150px;
+    background-color: #1a1a1d;
+    color: #b8bcc9;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 110%;
+    left: 50%;
+    margin-left: -75px;
+
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.tooltip .tooltiptext::after{
+    content: " ";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #1a1a1d transparent;
+}
+
+.tooltip:hover .tooltiptext{
+    visibility: visible;
+    opacity: 1;
+}
+
+.lang a:hover{
+    text-decoration: underline;
+}
