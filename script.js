@@ -13,15 +13,7 @@ $(document).ready(() => {
             $(event.currentTarget).removeClass('underline');
         }
     });
-
-    //bold active nav button
-    /*
-    $children.on('click', event =>{
-        $children.removeClass('active');
-        $(event.currentTarget).addClass('active');
-    });
-    */
-    
+   
     //smooth scrolling to anchors
     $('.anchor').on('click', function(e){
         e.preventDefault();
@@ -32,7 +24,6 @@ $(document).ready(() => {
         
         $('body, html').animate({ 'scrollTop': p - offset}, 250);
     });
-
 
     //change header according to viewport
     var welcome = $('#welcome').offset();
@@ -93,5 +84,9 @@ $(document).ready(() => {
             $children.removeClass('active');
             $('#btn4').addClass('active');
         }
+    });
+
+    $(".clickable-row").click(function(){
+        window.open($(this).data("href"), "_blank");
     });
 });

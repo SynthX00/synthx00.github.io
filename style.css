@@ -1,124 +1,23 @@
 body{
-    background-color: #2f3136;
-    color: #dfdadb;
+    background-color: #F0DCB8;
+    color: #706756;
     font-family: "Poppins";
     font-size: 1rem;
 }
 
-/********************************HEADER********************************/
-
-header{
-    position: fixed;
-    width: 100%;
-    height: 50px;
-    z-index: 5;
-    min-width: 200px;
-    letter-spacing: 0.13rem;
-}
-
-header, footer{
-    background-color: #242529;
-    color: #b8bcc9;
-    font-weight: 300;
-}
-
-@media only screen and (min-width:631px){
-
-    header .wrap{
-        margin: 15px auto;
-        width: 80%;
-        max-width: 1500px;
-        min-width: 550px;
-    }
-
-    header ul, header li{
-        display: inline-block;
-    }
-
-    header, footer, h3{
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-
-    .small-nav{
-        display: none;
-    }
-
-    nav{
-        min-width: 320px;
-        width: auto;
-        display: inline-block;
-    }
-
-    nav li{
-        margin-right: 10px;
-    }
-
-}
-
-.lang{
-    float: right;
-    width: 70px;
-}
-
-@media only screen and (max-width:630px){
-    header .wrap{
-        margin: 15px auto;
-        height: 25px;
-        width: 80%;
-        max-width: 1500px;
-        min-width: 200px;
-    }
-
-    .nav-buttons{
-        display: none;
-    }
-
-    .small-nav{
-        display: inline-block;
-        vertical-align: top;
-        position: relative;
-    }
-
-    .small-nav table{
-        margin-top: 3px;
-    }
-
-    .small-nav td{
-        padding-right: 15px;
-    }
-
-    .small-nav img{
-        width: auto;
-        height: auto;
-        max-width: 15px;
-    }
-
-    header ul, header li{
-        display: inline-block;
-    }
-
-    header, footer, h3{
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-}
-
 /********************************#WELCOME********************************/
 
-.content{
-    position: relative;
-    top: 50px;
-    min-width: 480px;
+#welcome div{
+    padding-top: 50px;
 }
 
-.banner{
-    display: block;
-    background-image: url("resources/banner.png");
-    background-position: center top;
-    background-size: cover;
-    height: 400px;
-    width: auto;
+#welcome .icons img{
+        width: 25px;
+        height:25px;
+        display: inline-block;
+        vertical-align: middle;
+        left: 10px;
 }
-
 
 @media only screen and (min-width:651px){
 
@@ -134,7 +33,14 @@ header, footer{
     #welcome h1{
         display: inline-block;
         font-size: 3.6rem;
-        color: white;
+        color: #706756;
+        margin-left: 7%;
+        vertical-align: middle;
+    }
+
+    #welcome p{
+        display: inline-block;
+        color: #706756;
         margin-left: 7%;
         vertical-align: middle;
     }
@@ -163,7 +69,7 @@ header, footer{
 
     #welcome h1{
         font-size: 2.6rem;
-        color: white;
+        color: #706756;
         max-width: 290px;
         min-width: 290px;
         margin-top: 10%;
@@ -179,7 +85,7 @@ header, footer{
         min-height: 50px;
         vertical-align: middle;
     }
-}
+} 
 
 /********************************#ABOUT********************************/
 
@@ -195,7 +101,7 @@ header, footer{
 }
 
 #about .divider{
-    border-bottom: 1px solid #f7f7f7;
+    border-bottom: 1px solid #706756;
     padding-bottom: 10px;
     width: 80%;
     margin-left: auto;
@@ -205,7 +111,7 @@ header, footer{
 
 #about h3, #projects h3{
     text-align: center;
-    color: white;
+    color: #706756;
     word-spacing: 0.1rem;
     letter-spacing: 0.15rem;
 }
@@ -373,7 +279,7 @@ header, footer{
 }
 
 #projects .divider{
-    border-bottom: 1px solid #f7f7f7;
+    border-bottom: 1px solid #706756;
     padding-bottom: 10px;
     width: 80%;
     margin-left: auto;
@@ -416,7 +322,8 @@ header, footer{
     #projects table td .content{
         position: relative;
         left: 5%;
-        width: 60%;
+        width: 90%;
+        padding-top: 40px;
     }
 
     #projects table td .title{
@@ -517,6 +424,11 @@ header, footer{
         letter-spacing: 0.1rem;
     }
 
+    #group0 .description{
+        min-height: 120px;
+        padding-top: 20px;
+    }
+
     #group1 .description{
         
         min-height: 120px;
@@ -546,12 +458,22 @@ header, footer{
     }
 }
 
+.clickable-row:hover{
+    cursor: pointer;
+}
+
 .date{
     font-size: 0.7rem;
     font-weight: 300;
 }
 
 /********************************FOOTER********************************/
+
+footer{
+    background-color: #D6C5A5;
+    color: #706756;
+    font-weight: 300;
+}
 
 footer{
     width: 100%;
@@ -606,7 +528,7 @@ footer img{
 }
 
 a{
-    color:white;
+    color:#706756;
 }
 
 #projects a:hover, footer a:hover{
@@ -614,7 +536,7 @@ a{
 }
 
 header a, footer a{
-    color: #b8bcc9;
+    color: #706756;
 }
 
 .tooltip {
@@ -626,7 +548,7 @@ header a, footer a{
     visibility: hidden;
     width: 150px;
     background-color: #1a1a1d;
-    color: #b8bcc9;
+    color: #706756;
     text-align: center;
     border-radius: 6px;
     padding: 5px 0;
