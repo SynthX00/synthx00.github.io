@@ -1,4 +1,4 @@
-body{
+body {
     background-color: #F0DCB8;
     color: #706756;
     font-family: "Poppins";
@@ -7,30 +7,30 @@ body{
 
 /********************************#WELCOME********************************/
 
-#welcome div{
+#welcome div {
     padding-top: 50px;
 }
 
-#welcome .icons img{
-        width: 25px;
-        height:25px;
-        display: inline-block;
-        vertical-align: middle;
-        left: 10px;
+#welcome .icons img {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    vertical-align: middle;
+    left: 10px;
 }
 
-@media only screen and (min-width:651px){
+@media only screen and (min-width:651px) {
 
-    #welcome div{
+    #welcome div {
         width: 40%;
-        margin:auto;
+        margin: auto;
         position: relative;
-        top:30%;
+        top: 30%;
         max-width: 600px;
         min-width: 600px;
     }
 
-    #welcome h1{
+    #welcome h1 {
         display: inline-block;
         font-size: 3.6rem;
         color: #706756;
@@ -38,16 +38,16 @@ body{
         vertical-align: middle;
     }
 
-    #welcome p{
+    #welcome p {
         display: inline-block;
         color: #706756;
         margin-left: 7%;
         vertical-align: middle;
     }
 
-    #welcome img{
-        width:100%;
-        height:auto;
+    #welcome img {
+        width: 100%;
+        height: auto;
         max-width: 150px;
         min-width: 50px;
         max-height: 2500px;
@@ -56,18 +56,18 @@ body{
     }
 }
 
-@media only screen and (max-width:650px){
+@media only screen and (max-width:650px) {
 
-    #welcome div{
+    #welcome div {
         width: 50%;
-        margin:auto;
+        margin: auto;
         position: relative;
-        top:20%;
+        top: 20%;
         max-width: 290px;
         min-width: 290px;
     }
 
-    #welcome h1{
+    #welcome h1 {
         font-size: 2.6rem;
         color: #706756;
         max-width: 290px;
@@ -75,9 +75,9 @@ body{
         margin-top: 10%;
     }
 
-    #welcome img{
-        width:100%;
-        height:auto;
+    #welcome img {
+        width: 100%;
+        height: auto;
         margin-left: 65px;
         max-width: 150px;
         min-width: 50px;
@@ -85,22 +85,22 @@ body{
         min-height: 50px;
         vertical-align: middle;
     }
-} 
+}
 
 /********************************#ABOUT********************************/
 
-.wrap{
+.wrap {
     width: 70%;
     max-width: 1120px;
     min-width: 480px;
     margin: auto;
 }
 
-#about{
+#about {
     margin-top: 50px;
 }
 
-#about .divider{
+#about .divider {
     border-bottom: 1px solid #706756;
     padding-bottom: 10px;
     width: 80%;
@@ -109,14 +109,15 @@ body{
     margin-bottom: 20px;
 }
 
-#about h3, #projects h3{
+#about h3,
+#projects h3 {
     text-align: center;
     color: #706756;
     word-spacing: 0.1rem;
     letter-spacing: 0.15rem;
 }
 
-.bio{
+.bio {
     width: 60%;
     text-align: justify;
     margin-left: auto;
@@ -125,148 +126,151 @@ body{
     letter-spacing: 0.15rem;
     line-height: 1.4;
 }
-@media only screen and (min-width: 1150px){
 
-    #skills{
+@media only screen and (min-width: 1150px) {
+
+    #skills {
         margin-top: 60px;
         min-width: 800px;
     }
 
-    #skills .container{
+    #skills .container {
         margin-left: auto;
         margin-right: auto;
         width: 70%;
         min-width: 800px;
     }
 
-    #skills .container tr{
+    #skills .container tr {
         height: 50px;
         padding-top: 20px;
         padding-bottom: 20px;
     }
 
-    #tbl1{
+    #tbl1 {
         vertical-align: middle;
     }
 
-    #tbl2{
+    #tbl2 {
         vertical-align: middle;
         float: right;
     }
 
-    .skills{
+    .skills {
         display: inline-block;
         vertical-align: center;
     }
 
-    .skills td{
+    .skills td {
         height: 30px;
         text-align: center;
         vertical-align: middle;
-        padding-right:10px;
-        padding-left:10px;
+        padding-right: 10px;
+        padding-left: 10px;
         vertical-align: text-bottom;
     }
 }
 
-@media only screen and (max-width: 1150px) and (min-width: 1040px){
+@media only screen and (max-width: 1150px) and (min-width: 1040px) {
 
-    #skills{
+    #skills {
         margin-top: 60px;
     }
 
-    #skills .container{
+    #skills .container {
         margin-left: auto;
         margin-right: auto;
         width: 100%;
     }
 
-    #skills .container tr{
+    #skills .container tr {
         height: 50px;
         padding-top: 20px;
         padding-bottom: 20px;
     }
 
-    #tbl1{
+    #tbl1 {
         vertical-align: middle;
     }
 
-    #tbl2{
+    #tbl2 {
         vertical-align: middle;
         float: right;
     }
 
-    .skills{
+    .skills {
         display: inline-block;
         vertical-align: center;
     }
 
-    .skills td{
+    .skills td {
         height: 30px;
         text-align: center;
         vertical-align: middle;
-        padding-right:10px;
-        padding-left:10px;
+        padding-right: 10px;
+        padding-left: 10px;
         vertical-align: text-bottom;
     }
 }
 
-@media only screen and (max-width: 1039px){
+@media only screen and (max-width: 1039px) {
 
-    #skills{
+    #skills {
         margin-top: 60px;
     }
 
-    #skills .container{
+    #skills .container {
         width: 330px;
         margin-left: auto;
         margin-right: auto;
     }
 
-    #skills .container tr{
+    #skills .container tr {
         height: 50px;
         padding-top: 20px;
         padding-bottom: 20px;
     }
 
-    .skills td{
+    .skills td {
         height: 30px;
         text-align: center;
         vertical-align: middle;
-        padding-right:10px;
+        padding-right: 10px;
         vertical-align: text-bottom;
     }
 
-    #tbl1{
+    #tbl1 {
         margin-bottom: 30px;
     }
-    #tbl2{
+
+    #tbl2 {
         margin-top: 30px;
     }
 }
 
-.skills td, h4,
-.bold{
+.skills td,
+h4,
+.bold {
     font-weight: bold;
 }
 
-.interests{
+.interests {
     margin-top: 60px;
     padding-bottom: 15px;
     word-spacing: 0.1rem;
     letter-spacing: 0.15rem;
 }
 
-.interests table{
+.interests table {
     margin: 15px auto 0 auto;
 }
 
-.interests table td{
-    padding-right:10px;
-    padding-left:10px;
+.interests table td {
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
-.interests table td img{
+.interests table td img {
     height: auto;
     width: auto;
     max-width: 50px;
@@ -274,11 +278,11 @@ body{
 
 /********************************#PROJECTS********************************/
 
-#projects{
+#projects {
     margin-top: 70px;
 }
 
-#projects .divider{
+#projects .divider {
     border-bottom: 1px solid #706756;
     padding-bottom: 10px;
     width: 80%;
@@ -287,129 +291,133 @@ body{
     margin-bottom: 40px;
 }
 
-.wide-table{
+.wide-table {
     display: relative;
 }
 
-.tall-table{
+.tall-table {
     display: none;
 }
 
-#projects .description{
+#projects .description {
     text-align: justify;
 }
 
-@media only screen and (min-width: 1254px){
+#projects .description b {
+    font-weight: bold;
+}
 
-    #projects table{
+@media only screen and (min-width: 1254px) {
+
+    #projects table {
         width: 866px;
         margin-left: auto;
         margin-right: auto;
     }
 
-    #projects table img{
+    #projects table img {
         max-width: 360px;
         width: auto;
         height: auto;
     }
 
-    #projects table td{
+    #projects table td {
         vertical-align: top;
         padding-top: 20px;
         padding-bottom: 20px;
     }
 
-    #projects table td .content{
+    #projects table td .content {
         position: relative;
         left: 5%;
         width: 90%;
         padding-top: 40px;
     }
 
-    #projects table td .title{
+    #projects table td .title {
         position: relative;
         bottom: 20px;
         letter-spacing: 0.1rem;
     }
 
-    #projects .description{
+    #projects .description {
         word-spacing: 0.1rem;
         letter-spacing: 0.15rem;
         line-height: 1.4;
     }
 }
 
-@media only screen and (max-width: 1254px) and (min-width: 1040px){
+@media only screen and (max-width: 1254px) and (min-width: 1040px) {
 
-    #projects table{
+    #projects table {
         width: 80%;
         margin-left: auto;
         margin-right: auto;
     }
 
-    #projects table img{
+    #projects table img {
         max-width: 250px;
         width: auto;
         height: auto;
     }
 
-    #projects table td{
+    #projects table td {
         vertical-align: top;
         padding-top: 20px;
         padding-bottom: 20px;
     }
 
-    #projects table td .content{
+    #projects table td .content {
         position: relative;
         left: 5%;
         min-width: 200px;
     }
 
-    #projects table .description{
+    #projects table .description {
         font-size: 0.8rem;
         width: 80%;
     }
 
-    #projects table td .title{
+    #projects table td .title {
         position: relative;
         bottom: 20px;
         letter-spacing: 0.1rem;
     }
 
-    #projects .description{
+    #projects .description {
         word-spacing: 0.1rem;
         letter-spacing: 0.10rem;
         line-height: 1;
     }
 }
 
-@media only screen and (max-width: 1039px){
-    .wide-table{
+@media only screen and (max-width: 1039px) {
+    .wide-table {
         display: none;
     }
 
-    .tall-table{
+    .tall-table {
         display: block;
         width: 480px;
         margin-left: auto;
         margin-right: auto;
     }
 
-    .tall-table tr{
+    .tall-table tr {
         text-align: center;
     }
-    
-    .tall-table td{
+
+    .tall-table td {
         height: 50px;
     }
 
-    .tall-table img{
+    .tall-table img {
         max-width: 250px;
         width: auto;
         height: auto;
     }
 
-    #projects table .description{
+    #projects table .description {
         font-size: 0.9rem;
         width: 90%;
         margin-left: auto;
@@ -419,96 +427,64 @@ body{
         line-height: 1.2;
     }
 
-    
-    #projects table td .title{
+
+    #projects table td .title {
         letter-spacing: 0.1rem;
-    }
-
-    #group0 .description{
-        min-height: 120px;
-        padding-top: 20px;
-    }
-
-    #group1 .description{
-        
-        min-height: 120px;
-        padding-top: 20px;
-    }
-
-    #group2 .description{
-
-        min-height: 120px;
-        padding-top: 20px;
-    }
-
-    #group3 .description{
-        
-        min-height: 120px;
-        padding-top: 20px;
-    }
-
-    #group4 .description{
-        min-height: 120px;
-        padding-top: 20px;
-    }
-
-    #group5 .description{
-        min-height: 120px;
-        padding-top: 20px;
     }
 }
 
-.clickable-row:hover{
+.clickable-row:hover {
     cursor: pointer;
 }
 
-.date{
+.date {
     font-size: 0.7rem;
     font-weight: 300;
 }
 
 /********************************FOOTER********************************/
 
-footer{
+footer {
     background-color: #D6C5A5;
     color: #706756;
     font-weight: 300;
 }
 
-footer{
+footer {
     width: 100%;
     height: 100px;
     margin-top: 100px;
     min-width: 480px;
 }
 
-#footer{
+#footer {
     position: relative;
     top: 50px;
     min-width: 450px;
 }
 
-#contacts #footer{
+#contacts #footer {
     top: 25%;
     width: 70%;
     max-width: 1120px;
     margin: auto;
 }
-#contacts #footer div{
+
+#contacts #footer div {
     display: inline-block;
     vertical-align: middle;
 }
 
-.copyright{
+.copyright {
     margin-top: 17px;
 }
 
-#contacts .contacts{
+#contacts .contacts {
     position: relative;
     float: right;
 }
 
-footer img{
+footer img {
     width: auto;
     height: auto;
     max-height: 35px;
@@ -518,33 +494,35 @@ footer img{
 
 /********************************OTHER********************************/
 
-.underline{
+.underline {
     text-decoration: underline;
 }
 
-.active{
+.active {
     font-weight: bold;
     text-decoration: none;
 }
 
-a{
-    color:#706756;
+a {
+    color: #706756;
 }
 
-#projects a:hover, footer a:hover{
+#projects a:hover,
+footer a:hover {
     text-decoration: underline;
 }
 
-header a, footer a{
+header a,
+footer a {
     color: #706756;
 }
 
 .tooltip {
     position: relative;
     display: inline-block;
-  }
+}
 
-.tooltip .tooltiptext{
+.tooltip .tooltiptext {
     visibility: hidden;
     width: 150px;
     background-color: #1a1a1d;
@@ -562,7 +540,7 @@ header a, footer a{
     transition: opacity 1s;
 }
 
-.tooltip .tooltiptext::after{
+.tooltip .tooltiptext::after {
     content: " ";
     position: absolute;
     bottom: 100%;
@@ -573,11 +551,11 @@ header a, footer a{
     border-color: transparent transparent #1a1a1d transparent;
 }
 
-.tooltip:hover .tooltiptext{
+.tooltip:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
 }
 
-.lang a:hover{
+.lang a:hover {
     text-decoration: underline;
 }
