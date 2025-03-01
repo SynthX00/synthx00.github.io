@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Daniel Rangel</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <form id="teams">
+        <input type="text" id="tnames" placeholder="Daniel,Rui,..." onblur="validateNames()"> (names should be separated using a comma &lt; , &gt;) <br/>
+        <input type="number" id="nteams" min="1" size="3" value=1> teams <br/>
+        <input type="button" value="Run" onclick="generateTeams()">
+    </form>
+    <script>
+        const regex = /[^A-Za-z0-9,]+/g
+        var names = []
+
+        function validateNames() {
+            var input = document.getElementById("tnames").value;
+            input = input.replaceAll(regex,'')
+            names = input.split(',')
+            names = names.filter(Boolean)
+            document.getElementById("nteams").max = names.length
+        }
+
+
+        function generateTeams() {
+            
+            validateNames()
+            if(names.length == 0){
+                return
+            }
+            
+            var nteams = document.getElementById("nteams").value
+            if(nteams>names.length){
+                return
+            }
+
+            var teamSize = Math.ceil(names.length / nteams)
+            alert(teamSize)
+            
+            var div = document.getElementById("tlist")
+            if (div){
+                document.body.removeChild(div)
+            }
+
+            div = document.createElement("div")
+            div.setAttribute("id", "tlist")
+            document.body.appendChild(div)
+
+            var j = 1
+            while(j <= nteams){ //loop teams
+
+                var heading = document.createElement("h3")
+                heading.innerText ="team"+j
+                var ul = document.createElement("ul")
+                ul.setAttribute("id", "team"+j)
+                div.appendChild(heading)
+                div.appendChild(ul)
+
+                var i = teamSize
+                while(i > 0){ //loop names
+                    if(names.length == 0){
+                        break
+                    }
+                    var randInt = Math.floor(Math.random() * names.length)
+                    if (randInt < 0){
+                        randInt = 0
+                    }
+                    
+                    var li = document.createElement("li")
+                    var text = document.createTextNode(names[randInt])
+                    li.appendChild(text)
+                    ul.appendChild(li)
+                    names.splice(randInt,1)
+                    i=i-1
+                }
+
+                j = j+1
+            }
+
+            //document.getElementById("teams").reset()
+        }
+
+    </script>
+</body>
+</html>
